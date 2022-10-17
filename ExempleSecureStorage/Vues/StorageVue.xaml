@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExempleSecureStorage.Vues.StorageVue"
+             Title="StorageVue">
+    <VerticalStackLayout>
+        <ContentView>
+            <Frame HasShadow="True" CornerRadius="15" Margin="20" Padding="10" HeightRequest="120" BackgroundColor="#D8D8D8">
+                <Grid RowDefinitions="2*,2*" ColumnDefinitions="180,100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+
+                    <Label  Grid.Row=" 0" Grid.Column="0" Text="mot de passe :" HorizontalOptions="StartAndExpand"  FontSize="22" TextColor="Black"/>
+                    <Entry x:Name="SaisieMdp" Grid.Row=" 1" Grid.Column="0" HorizontalOptions="StartAndExpand" Placeholder="Saisir un Mdp" PlaceholderColor="Black" TextColor="Black"/>
+                    <Button x:Name="ButtonValider" Text="Valider" TextColor="White" HorizontalOptions="StartAndExpand" Clicked="ButtonValider_Clicked" BackgroundColor="DarkBlue"  Grid.Row="1" Grid.Column="1"/>
+
+                </Grid>
+            </Frame>
+        </ContentView>
+        <ContentView>
+            <Frame HasShadow="True" CornerRadius="15" Margin="20" Padding="10" HeightRequest="120" BackgroundColor="#D8D8D8">
+                <Grid RowDefinitions="2*,2*" ColumnDefinitions="180,100" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+
+                    <Label  Grid.Row=" 0" Grid.Column="0" Text="votre mot de passe :" HorizontalOptions="StartAndExpand"  FontSize="22" TextColor="Black"/>
+                    <Entry x:Name="Mdp" Grid.Row=" 1" Grid.Column="0" HorizontalOptions="StartAndExpand" Placeholder="" PlaceholderColor="Black" TextColor="Black"/>
+
+                </Grid>
+            </Frame>
+        </ContentView>
+    </VerticalStackLayout>
+</ContentPage>
